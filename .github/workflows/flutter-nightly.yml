@@ -5,7 +5,11 @@ on:
     # schedule build every night
     - cron: "0 0 * * *"
   workflow_dispatch:
-
+permissions:
+  contents: write          # 读写仓库代码、提交tag、release
+  actions: read
+  packages: write          # 如果要上传artifact/publish包
+  pull-requests: write     # 如需操作PR
 jobs:
   run-flutter-nightly-build:
     uses: ./.github/workflows/flutter-build.yml
