@@ -113,7 +113,7 @@ const CHARS: &[char] = &[
     'm', 'n', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
 ];
 
-pub const RENDEZVOUS_SERVERS: &[&str] = &["61.179.196.38"];
+pub const RENDEZVOUS_SERVERS: &[&str] = &["www.ketai-tech.cn"];
 pub const RS_PUB_KEY: &str = "o2PhrA1uvedZaJqWfrwn7Z5K9R9kU7i7RYlid88aVWs=";
 
 pub const RENDEZVOUS_PORT: i32 = 21116;
